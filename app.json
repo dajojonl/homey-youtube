@@ -2,9 +2,11 @@
   "id": "com.youtube",
   "name": {
     "en": "YouTube"
+    "nl": "YouTube"
   },
   "description": {
     "en": "Search YouTube, play playlists"
+    "nl": "Doorzoek YouTube, speel afspeellijst"
   },
   "version": "0.5.0",
   "compatibility": "0.x",
@@ -50,6 +52,11 @@
           "on youtube",
           "youtube"
         ]
+        "nl": [
+          "van youtube",
+          "op youtube",
+          "youtube"
+        ]
       }
     },
     {
@@ -58,6 +65,9 @@
       "triggers": {
         "en": [
           "watch"
+        ]
+        "nl": [
+          "kijk"
         ]
       }
     },
@@ -68,6 +78,9 @@
         "en": [
           "play"
         ]
+        "nl": [
+          "speel"
+        ]
       }
     }
   ],
@@ -77,18 +90,21 @@
         "id": "youtubeMediaChanged",
         "title": {
           "en": "YouTube media changed"
+          "nl": "YouTube media veranderd"
         },
         "tokens": [
           {
             "name": "url",
             "title": {
               "en": "URL"
+              "nl": "Linkadres"
             }
           },
           {
             "name": "source",
             "title": {
               "en": "Source"
+              "en": "Bron"
             }
           }
         ]
@@ -99,6 +115,7 @@
         "id": "searchYoutube",
         "title": {
           "en": "Search YouTube"
+          "nl": "Doorzoek YouTube"
         },
         "args": [
           {
@@ -106,6 +123,7 @@
             "type": "autocomplete",
             "placeholder": {
               "en": "Find a video..."
+              "nl": "Vind een video..."              
             }
           }
         ]
@@ -114,6 +132,7 @@
         "id": "searchYoutubeLive",
         "title": {
           "en": "Search YouTube (live)"
+          "nl": "Doorzoek YouTube (live)"
         },
         "fluidArgs": true,
         "args": [
@@ -122,6 +141,7 @@
             "type": "text",
             "placeholder": {
               "en": "search..."
+              "nl": "doorzoek..."
             }
           },
           {
@@ -132,12 +152,14 @@
                 "id": "first",
                 "label": {
                   "en": "First"
+                  "nl": "Eerst"
                 }
               },
               {
                 "id": "random",
                 "label": {
                   "en": "Random"
+                  "nl": "Willekeurig"
                 }
               }
             ]
@@ -148,6 +170,7 @@
         "id": "getYoutubePlaylistURL",
         "title": {
           "en": "Get YouTube playlist"
+          "nl": "Verkrijg YouTube afspeellijst"
         },
         "fluidArgs": true,
         "args": [
@@ -156,6 +179,7 @@
             "type": "text",
             "placeholder": {
               "en": "Playlist URL"
+              "nl": "Afspeellijst Link"
             }
           },
           {
@@ -166,18 +190,21 @@
                 "id": "next",
                 "label": {
                   "en": "Next"
+                  "nl": "Volgende"
                 }
               },
               {
                 "id": "shuffle",
                 "label": {
                   "en": "Shuffle"
+                  "nl": "Mix"
                 }
               },
               {
                 "id": "first",
                 "label": {
                   "en": "First"
+                  "nl": "Eerste"
                 }
               }
             ]
@@ -188,6 +215,7 @@
         "id": "stopYoutubePlaylist",
         "title": {
           "en": "Stop YouTube playlist"
+          "nl": "Stop YouTube afspeellijst"
         }
       }
     ]
